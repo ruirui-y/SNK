@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{14f3fff4-4f22-4cd3-a84e-76a21d281e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Video">
+      <UniqueIdentifier>{9a970525-f956-47a2-a894-32a9ce473f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source\Avatar">
+      <UniqueIdentifier>{934f935d-f93c-43b0-8a12-5ec262478752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DllFile">
+      <UniqueIdentifier>{e3a30e0d-599a-4c80-b812-2f4eabd5ce89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bat">
+      <UniqueIdentifier>{dbe7d367-f70a-4522-bce5-03601634a253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ImageBackground">
+      <UniqueIdentifier>{cbdc4367-ce4b-4955-a347-e50d39aa2b75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="SNK.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="mainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="mainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <QtUic Include="ShowMinScreen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="playmovie.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="MaskWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Button.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tiaoshiWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="toubiWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="zhangdanWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="VideoWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ModeMaskWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyPress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmAvatar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalRelay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowMinScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialPort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaskWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tiaoshiWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toubiWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zhangdanWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StandbyAnimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobaScreenShot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModeMaskWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalSend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Worker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRecognition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="KeyPress.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LogRecord.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PushButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ConfirmAvatar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SignalRelay.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SwitchGame.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ShowMinScreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SerialPort.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ShowScreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MaskWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SerialThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tiaoshiWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="toubiWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="zhangdanWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="VideoWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GlobaScreenShot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ModeMaskWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StandbyAnimation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SignalSend.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Capture.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ShowLabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Interface.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Worker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TextRecognition.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Avatar\阿修·克里门森.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\安迪·博加德.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\安东诺夫.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\安琪尔.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\八神庵.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\霸王丸.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\坂崎百合.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\坂崎良.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\暴龙王.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\暴走克里斯.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\暴走七枷社.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\暴走夏尔美.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\比利·凯恩.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\碧·珍妮特.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\不知火舞.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\布鲁·玛丽.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\草薙京.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\妲丽·刀伽.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\德罗丽斯.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\东丈.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\堕珑.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\二阶堂红丸.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\高尼茨.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\哈迪兰.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\吉斯·霍华德.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\金家潘.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\究极卢卡尔.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\凯.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\柯隆.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\克拉克·史迪尔.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\克里斯.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\库克里.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\库拉·戴尔蒙多.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\拉尔夫·琼斯.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\拉蒙.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\莉安娜·哈迪兰.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\梁.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\罗伯特·加西亚.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\洛克·霍华德.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\麻宫雅典娜.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\马克西马.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\明天君.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\娜吉德.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\娜可露露.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\七枷社.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\琼.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\山崎龙二.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\神鸟千鹤.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\矢吹真吾.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\瞬影.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\四条雏子.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\特瑞·博加德.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\薇普.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\温妮莎.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\希尔薇·波拉·波拉.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\夏尔美.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\牙刀.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\伊丽莎白·布兰克托什.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="Avatar\伊丝拉.png">
+      <Filter>Source\Avatar</Filter>
+    </Image>
+    <Image Include="fullBlood.png">
+      <Filter>Source\Resource Files</Filter>
+    </Image>
+    <Image Include="termination.png">
+      <Filter>Source\Resource Files</Filter>
+    </Image>
+    <Image Include="residualBlood.png">
+      <Filter>Source\Resource Files</Filter>
+    </Image>
+    <Image Include="..\ImageBcakground\mainWidgetBackground.jpg">
+      <Filter>Source\ImageBackground</Filter>
+    </Image>
+    <Image Include="..\ImageBcakground\pushButtonBackground.jpg">
+      <Filter>Source\ImageBackground</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Source\Video\kof.mp4">
+      <Filter>Source\Video</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DllKof.dll">
+      <Filter>Source\DllFile</Filter>
+    </None>
+    <None Include="Bat\start.bat">
+      <Filter>Source\Bat</Filter>
+    </None>
+    <None Include="stylesheet.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="chuzhaobiao.qrc">
+      <Filter>Source\Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="Image.qrc">
+      <Filter>Source\Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Singletion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

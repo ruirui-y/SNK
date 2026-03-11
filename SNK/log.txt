@@ -1,0 +1,86 @@
+01:09:16:20:03.362  [Debug]:  "成功打开串口" "COM1"
+01:09:16:20:03.362  [Debug]:  "串口初始化成功 当前线程ID：" 0x4d98
+01:09:16:20:03.417  [Debug]:  result.size() =  12
+01:09:16:20:03.417  [Debug]:  "SerialThread::SerialThread() 构造函数"
+01:09:16:20:03.417  [Debug]:  MainThread =  0x2578
+01:09:16:20:03.601  [Debug]:  "全局截屏线程ID: " 0x7e70
+01:09:16:20:30.505  [Debug]:  emit gameBegin
+01:09:16:20:30.505  [Debug]:  emit gameBegin
+isGameBegin()"
+01:09:16:20:30.852  [Debug]:  Serial:: "joystick" Write data success!
+01:09:16:20:30.852  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:31.044  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:32.763  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:32.764  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:32.956  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:34.029  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:34.149  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:34.341  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:35.410  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:35.423  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:35.616  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:36.672  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:36.672  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:36.865  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:37.917  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:37.918  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:38.110  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:39.181  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:39.181  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:39.372  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:40.441  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:40.441  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:40.634  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:41.717  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:41.718  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:41.909  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:42.994  [Debug]:  "当前界面是 gameBegin"
+01:09:16:20:42.995  [Debug]:  Serial::SEND data: "0110000200010200016672"
+01:09:16:20:43.186  [Debug]:  Serial:: "singleRegister" Write data success!
+01:09:16:20:44.296  [Debug]:  "按键发送成功！！！！！！"
+01:09:16:20:44.498  [Debug]:  "免费模式, 启动免费模式的投币轮询监听"
+01:09:16:20:45.187  [Debug]:  "执行串口读币任务"
+01:09:16:20:45.442  [Debug]:  "第一次读币，将数据清空"
+01:09:16:20:45.442  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:45.691  [Debug]:  "执行串口读币任务"
+01:09:16:20:45.691  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:46.191  [Debug]:  "执行串口读币任务"
+01:09:16:20:46.191  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:46.692  [Debug]:  "执行串口读币任务"
+01:09:16:20:46.692  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:47.191  [Debug]:  "执行串口读币任务"
+01:09:16:20:47.191  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:47.696  [Debug]:  "执行串口读币任务"
+01:09:16:20:47.757  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:48.188  [Debug]:  "执行串口读币任务"
+01:09:16:20:48.188  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:48.687  [Debug]:  "执行串口读币任务"
+01:09:16:20:48.687  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:49.194  [Debug]:  "执行串口读币任务"
+01:09:16:20:49.194  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:49.690  [Debug]:  "执行串口读币任务"
+01:09:16:20:49.690  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:50.200  [Debug]:  "执行串口读币任务"
+01:09:16:20:50.200  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:50.693  [Debug]:  "执行串口读币任务"
+01:09:16:20:50.693  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:51.187  [Debug]:  "执行串口读币任务"
+01:09:16:20:51.187  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:51.697  [Debug]:  "执行串口读币任务"
+01:09:16:20:51.697  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:52.191  [Debug]:  "执行串口读币任务"
+01:09:16:20:52.191  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:52.694  [Debug]:  "执行串口读币任务"
+01:09:16:20:52.694  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:53.194  [Debug]:  "执行串口读币任务"
+01:09:16:20:53.194  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:53.687  [Debug]:  "执行串口读币任务"
+01:09:16:20:53.687  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:54.197  [Debug]:  "执行串口读币任务"
+01:09:16:20:54.197  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:54.695  [Debug]:  "执行串口读币任务"
+01:09:16:20:54.695  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:55.191  [Debug]:  "执行串口读币任务"
+01:09:16:20:55.191  [Debug]:  oneCoin: 0  twoCoin: 0
+01:09:16:20:55.310  [Debug]:  Singletion is deleted
+01:09:16:20:55.316  [Debug]:  Singletion is deleted

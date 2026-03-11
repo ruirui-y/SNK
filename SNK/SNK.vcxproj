@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18990E0E-1406-4150-B16A-A7ED0F7305FC}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.12.9_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.12.9_msvc2017_64</QtInstall>
+    <QtModules>core;gui;multimedia;widgets;serialport;multimediawidgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+    <QtPlugin>false</QtPlugin>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+    <Import Project="..\..\..\..\Props\SNK.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <IncludePath>C:\OpenCV\opencv4.2.0\opencv\build\include\opencv2;C:\OpenCV\opencv4.2.0\opencv\build\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\opencv4.2.0\opencv\build\x64\vc15\lib;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>opencv_world420d.lib;libEGLd.lib;libGLESv2d.lib;Qt53DAnimationd.lib;Qt53DCored.lib;Qt53DExtrasd.lib;Qt53DInputd.lib;Qt53DLogicd.lib;Qt53DQuickAnimationd.lib;Qt53DQuickd.lib;Qt53DQuickExtrasd.lib;Qt53DQuickInputd.lib;Qt53DQuickRenderd.lib;Qt53DQuickScene2D.lib;Qt53DQuickScene2Dd.lib;Qt53DRenderd.lib;Qt5AccessibilitySupportd.lib;Qt5AxBased.lib;Qt5AxContainerd.lib;Qt5AxServerd.lib;Qt5Bluetoothd.lib;Qt5Concurrentd.lib;Qt5Cored.lib;Qt5DBusd.lib;Qt5DesignerComponentsd.lib;Qt5Designerd.lib;Qt5DeviceDiscoverySupportd.lib;Qt5EdidSupportd.lib;Qt5EglSupportd.lib;Qt5EventDispatcherSupportd.lib;Qt5FbSupportd.lib;Qt5FontDatabaseSupportd.lib;Qt5Gamepad.lib;Qt5Gamepadd.lib;Qt5Guid.lib;Qt5Helpd.lib;Qt5Locationd.lib;Qt5Multimediad.lib;Qt5MultimediaQuickd.lib;Qt5MultimediaWidgetsd.lib;Qt5Networkd.lib;Qt5Nfcd.lib;Qt5OpenGLd.lib;Qt5OpenGLExtensionsd.lib;Qt5PacketProtocold.lib;Qt5PlatformCompositorSupportd.lib;Qt5Positioningd.lib;Qt5PositioningQuickd.lib;Qt5PrintSupportd.lib;Qt5Qmld.lib;Qt5QmlDebugd.lib;Qt5QuickControls2d.lib;Qt5Quickd.lib;Qt5QuickParticlesd.lib;Qt5QuickShapesd.lib;Qt5QuickTemplates2d.lib;Qt5QuickTestd.lib;Qt5QuickWidgetsd.lib;Qt5RemoteObjectsd.lib;Qt5Scxmld.lib;Qt5Sensorsd.lib;Qt5SerialBusd.lib;Qt5SerialPortd.lib;Qt5Sqld.lib;Qt5Svgd.lib;Qt5Testd.lib;Qt5TextToSpeechd.lib;Qt5ThemeSupportd.lib;Qt5UiToolsd.lib;Qt5VulkanSupportd.lib;Qt5WebChanneld.lib;Qt5WebSocketsd.lib;Qt5WebViewd.lib;Qt5Widgetsd.lib;Qt5WindowsUIAutomationSupportd.lib;Qt5WinExtrasd.lib;Qt5Xmld.lib;Qt5XmlPatternsd.lib;qtfreetyped.lib;qtlibpngd.lib;qtmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Link>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <QtRcc>
+      <DynamicSource>output</DynamicSource>
+      <TwoPass>false</TwoPass>
+      <QmlCacheGenerate>false</QmlCacheGenerate>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Capture.cpp" />
+    <ClCompile Include="GlobaScreenShot.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="ModeMaskWidget.cpp" />
+    <ClCompile Include="ShowLabel.cpp" />
+    <ClCompile Include="SignalSend.cpp" />
+    <ClCompile Include="StandbyAnimation.cpp" />
+    <ClCompile Include="TextRecognition.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="tiaoshiWidget.cpp" />
+    <ClCompile Include="toubiWidget.cpp" />
+    <ClCompile Include="VideoWidget.cpp" />
+    <ClCompile Include="Worker.cpp" />
+    <ClCompile Include="zhangdanWidget.cpp" />
+    <QtUic Include="Button.ui" />
+    <QtUic Include="MaskWidget.ui" />
+    <QtUic Include="ModeMaskWidget.ui" />
+    <QtUic Include="playmovie.ui" />
+    <QtUic Include="ShowMinScreen.ui" />
+    <QtUic Include="SNK.ui" />
+    <QtMoc Include="mainWindow.h" />
+    <ClCompile Include="ConfirmAvatar.cpp" />
+    <ClCompile Include="KeyPress.cpp" />
+    <ClCompile Include="LogRecord.cpp" />
+    <ClCompile Include="MaskWidget.cpp" />
+    <ClCompile Include="PushButton.cpp" />
+    <ClCompile Include="SerialPort.cpp" />
+    <ClCompile Include="SerialThread.cpp" />
+    <ClCompile Include="ShowMinScreen.cpp" />
+    <ClCompile Include="ShowScreen.cpp" />
+    <ClCompile Include="SignalRelay.cpp" />
+    <ClCompile Include="SwitchGame.cpp" />
+    <ClCompile Include="mainWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="tiaoshiWidget.ui" />
+    <QtUic Include="toubiWidget.ui" />
+    <QtUic Include="VideoWidget.ui" />
+    <QtUic Include="zhangdanWidget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="KeyPress.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\ImageBcakground\mainWidgetBackground.jpg" />
+    <Image Include="..\ImageBcakground\pushButtonBackground.jpg" />
+    <Image Include="Avatar\七枷社.png" />
+    <Image Include="Avatar\不知火舞.png" />
+    <Image Include="Avatar\东丈.png" />
+    <Image Include="Avatar\二阶堂红丸.png" />
+    <Image Include="Avatar\伊丝拉.png" />
+    <Image Include="Avatar\伊丽莎白·布兰克托什.png" />
+    <Image Include="Avatar\克拉克·史迪尔.png" />
+    <Image Include="Avatar\克里斯.png" />
+    <Image Include="Avatar\八神庵.png" />
+    <Image Include="Avatar\凯.png" />
+    <Image Include="Avatar\吉斯·霍华德.png" />
+    <Image Include="Avatar\哈迪兰.png" />
+    <Image Include="Avatar\四条雏子.png" />
+    <Image Include="Avatar\坂崎百合.png" />
+    <Image Include="Avatar\坂崎良.png" />
+    <Image Include="Avatar\堕珑.png" />
+    <Image Include="Avatar\夏尔美.png" />
+    <Image Include="Avatar\妲丽·刀伽.png" />
+    <Image Include="Avatar\娜可露露.png" />
+    <Image Include="Avatar\娜吉德.png" />
+    <Image Include="Avatar\安东诺夫.png" />
+    <Image Include="Avatar\安琪尔.png" />
+    <Image Include="Avatar\安迪·博加德.png" />
+    <Image Include="Avatar\山崎龙二.png" />
+    <Image Include="Avatar\布鲁·玛丽.png" />
+    <Image Include="Avatar\希尔薇·波拉·波拉.png" />
+    <Image Include="Avatar\库克里.png" />
+    <Image Include="Avatar\库拉·戴尔蒙多.png" />
+    <Image Include="Avatar\德罗丽斯.png" />
+    <Image Include="Avatar\拉尔夫·琼斯.png" />
+    <Image Include="Avatar\拉蒙.png" />
+    <Image Include="Avatar\明天君.png" />
+    <Image Include="Avatar\暴走七枷社.png" />
+    <Image Include="Avatar\暴走克里斯.png" />
+    <Image Include="Avatar\暴走夏尔美.png" />
+    <Image Include="Avatar\暴龙王.png" />
+    <Image Include="Avatar\柯隆.png" />
+    <Image Include="Avatar\梁.png" />
+    <Image Include="Avatar\比利·凯恩.png" />
+    <Image Include="Avatar\洛克·霍华德.png" />
+    <Image Include="Avatar\温妮莎.png" />
+    <Image Include="Avatar\牙刀.png" />
+    <Image Include="Avatar\特瑞·博加德.png" />
+    <Image Include="Avatar\琼.png" />
+    <Image Include="Avatar\瞬影.png" />
+    <Image Include="Avatar\矢吹真吾.png" />
+    <Image Include="Avatar\碧·珍妮特.png" />
+    <Image Include="Avatar\神鸟千鹤.png" />
+    <Image Include="Avatar\究极卢卡尔.png" />
+    <Image Include="Avatar\罗伯特·加西亚.png" />
+    <Image Include="Avatar\草薙京.png" />
+    <Image Include="Avatar\莉安娜·哈迪兰.png" />
+    <Image Include="Avatar\薇普.png" />
+    <Image Include="Avatar\金家潘.png" />
+    <Image Include="Avatar\阿修·克里门森.png" />
+    <Image Include="Avatar\霸王丸.png" />
+    <Image Include="Avatar\马克西马.png" />
+    <Image Include="Avatar\高尼茨.png" />
+    <Image Include="Avatar\麻宫雅典娜.png" />
+    <Image Include="fullBlood.png" />
+    <Image Include="residualBlood.png" />
+    <Image Include="termination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Source\Video\kof.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="LogRecord.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Bat\start.bat" />
+    <None Include="DllKof.dll" />
+    <None Include="stylesheet.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="PushButton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ShowScreen.h" />
+    <QtMoc Include="SwitchGame.h" />
+    <QtMoc Include="SignalRelay.h" />
+    <QtMoc Include="ConfirmAvatar.h" />
+    <QtMoc Include="ShowMinScreen.h" />
+    <QtMoc Include="SerialPort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="chuzhaobiao.qrc" />
+    <QtRcc Include="Image.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MaskWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SerialThread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="tiaoshiWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="toubiWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="zhangdanWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VideoWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ModeMaskWidget.h" />
+    <QtMoc Include="GlobaScreenShot.h" />
+    <QtMoc Include="StandbyAnimation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SignalSend.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="Singletion.h" />
+    <QtMoc Include="TextRecognition.h" />
+    <QtMoc Include="Worker.h" />
+    <QtMoc Include="Interface.h" />
+    <QtMoc Include="ThreadPool.h" />
+    <QtMoc Include="ShowLabel.h" />
+    <QtMoc Include="Capture.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

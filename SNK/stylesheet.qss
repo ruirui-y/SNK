@@ -1,0 +1,6 @@
+#TextLabel{
+    font-family: "ΊΪΜε";
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
