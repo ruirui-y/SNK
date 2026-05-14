@@ -5,7 +5,7 @@
 #include <QThread>
 #include <QTimer>
 #include <QMessageBox>
-
+#include <QByteArray>
 #include "SerialPort.h"
 #include "SwitchGame.h"
 #include "ConfirmAvatar.h"
@@ -83,13 +83,11 @@ void TestMinScreenAnimation()
 /* 登录验证 */
 bool LogVerify()
 {
-    char* pUserPassword = new char[strlen("K7#pL2!m") + 1];
-    strcpy(pUserPassword, "K7#pL2!m");
+    // 直接赋值，QByteArray 会在内部自动分配并管理内存
+    QByteArray userPassword = "K7#pL2!m";
+    QByteArray adminPassword = "K7#pL2!m";
 
-    char* pAdminPassword = new char[strlen("K7#pL2!m") + 1];
-    strcpy(pAdminPassword, "K7#pL2!m");
-
-    return LoginVerify(pUserPassword, pAdminPassword);
+    return LoginVerify(userPassword.data(), adminPassword.data());
 }
 
 /* 加载样式表 */

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>H:\YJJ\Project\SNK\Vikey\include;H:\YJJ\opencv\build\include;H:\YJJ\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\YJJ\opencv\build\x64\vc16\lib;H:\YJJ\Project\SNK\Vikey\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings">
+    <QtInstall>QT5.14.2</QtInstall>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>CaptureStatic.lib;TestEncryption.lib;ViKey.lib;opencv_world4100.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

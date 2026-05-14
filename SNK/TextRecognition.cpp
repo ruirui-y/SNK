@@ -1,5 +1,5 @@
 #include "TextRecognition.h"
-#include "allheaders.h"
+#include <leptonica/allheaders.h>
 #include <QDebug>
 #include <QDir>
 

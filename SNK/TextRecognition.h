@@ -4,7 +4,7 @@
 #include <QObject>
 #include <opencv2/opencv.hpp>
 #include "singletion.h"
-#include "baseapi.h" 
+#include <tesseract/baseapi.h>
 
 class TextRecognition  : public QObject , public Singletion<TextRecognition>
 {

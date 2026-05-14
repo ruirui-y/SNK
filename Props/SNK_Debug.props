@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>H:\YJJ\Project\SNK\Vikey\include;H:\YJJ\opencv\build\include;H:\YJJ\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings">
+    <QtModules>core;gui;multimedia;widgets</QtModules>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup />
+</Project>
