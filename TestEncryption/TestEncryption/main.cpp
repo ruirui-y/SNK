@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
     char* pAdminPassword = new char[strlen("K7#pL2!m") + 1];
     strcpy(pAdminPassword, "K7#pL2!m");
 
-    ModifyPassword(pUserPassword, pAdminPassword);
-
-    /*LoginVerify(pUserPassword, pAdminPassword);*/
+    // ModifyPassword(pUserPassword, pAdminPassword);
+    LoginVerify(pUserPassword, pAdminPassword);
     return a.exec();
 }

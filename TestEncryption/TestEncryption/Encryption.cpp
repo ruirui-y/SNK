@@ -1,6 +1,6 @@
 #include "Encryption.h"
 
-#include "Vikey/Vikey.h"
+#include "Vikey.h"
 #include <QDebug>
 #include <QMessageBox>
 
@@ -8,10 +8,18 @@
 
 #include <stdio.h>
 #include <tchar.h>
-#include "Encryption.h"
 
 bool CheckViKey(DWORD* dwRetCode, DWORD* dwCount, DWORD* dwHID, char* pUserPassword, char* pAdminPassword)
 {
+    char szUserSN[64] = { "718A5C0B8E591B5A3B7B0DB260DBB27B" };
+    *dwRetCode = VikeySetUserSN(szUserSN);
+    if (*dwRetCode)
+    {
+        qDebug() << __FUNCTION__ << QStringLiteral("VikeySetUserSN 失败!\n");
+        QMessageBox::warning(0, QStringLiteral("提示"), QStringLiteral("VikeySetUserSN 失败!\n"), QMessageBox::Ok);
+        return false;
+    }
+
     /* 查找设备 */
     *dwRetCode = VikeyFind(dwCount);
 
@@ -23,6 +31,17 @@ bool CheckViKey(DWORD* dwRetCode, DWORD* dwCount, DWORD* dwHID, char* pUserPassw
     }
 
     WORD Index = 0;
+
+    //设置加密狗ApiKey 硬件版本为7.4.5(含)以后的加密狗必须要调用此接口才能登录
+    //ApiKey 是由ViKey加密管理工具的->加密狗管理->密钥设置页面  通过Api密钥种子生成的
+    char szApiKey[256] = { "2F4DA4D72B5DF341A20CD9D617BD0976B366335662CB53011B8889B892247AF9F7EE5E0C9D3405309B775229806C79C491B1AE2318549169186884938C8993D8" };
+    *dwRetCode = VikeySetApiKey(Index, szApiKey);
+    if (*dwRetCode)
+    {
+        qDebug() << __FUNCTION__ << QStringLiteral("设置Api密钥 失败!\n");
+        QMessageBox::warning(0, QStringLiteral("提示"), QStringLiteral("设置Api密钥 失败!\n"), QMessageBox::Ok);
+        return false;
+    }
 
     /* 获取设备ID */
     *dwRetCode = VikeyGetHID(Index, dwHID);
